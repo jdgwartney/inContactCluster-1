@@ -1,6 +1,6 @@
 $metric_id = 'PROCESSOR_PERCENT_USER_TIME'
 $source = Get-Content Env:\COMPUTERNAME
-$counter_name = '\Processor(_total)\% User Time'
+$counter_name = '\processor(_total)\% user time'
 
 while($true)
 {
