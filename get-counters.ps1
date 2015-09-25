@@ -4,8 +4,8 @@ $counter_name = '\processor(_total)\% processor time'
 
 while($true)
 {
-    $counter_value =  ((get-counter -counter $counter_name).countersamples | select -expandproperty cookedvalue)/100.0
-    $current_time = get-date -UFormat %s
+    $counter_value =  ((Get-Counter -Counter $counter_name).countersamples | select -expandproperty cookedvalue)/100.0
+    $current_time = Get-Date -Date (Get-Date).toUniversalTime() -UFormat %s
     $timestamp = [math]::round($current_time)
     write-host $metric_id $counter_value $source $timestamp
     [Console]::Out.Flush()
