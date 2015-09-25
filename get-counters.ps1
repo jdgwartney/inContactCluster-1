@@ -5,7 +5,8 @@ $counter_name = '\physicaldisk(_total)\current disk queue length'
 while($true)
 {
     $counter_value =  (get-counter -counter $counter_name).countersamples | select -expandproperty cookedvalue
-    $timestamp = (get-date -UFormat %s)
+    $current_time = get-date -UFormat %s
+    $timestamp = [math]::round($current_time)
     write-host $metric_id $counter_value $hostname $timestamp
     [Console]::Out.Flush()
 }
