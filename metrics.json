@@ -1,5 +1,5 @@
 {
-  "PROCESSOR_PERCENT_USER_TIME": {
+  "PROCESSOR_PERCENT_PROCESSOR_TIME": {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
     "description": "Percentage of CPU spent in use space",
