@@ -5,7 +5,7 @@
     "description": "Percentage of CPU used",
     "displayName": "Processor % Time",
     "displayNameShort": "Proc % Time",
-    "unit": "percentage"
+    "unit": "percent"
   }
 }
 
