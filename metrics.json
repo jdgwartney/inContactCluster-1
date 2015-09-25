@@ -1,11 +1,11 @@
 {
-  "PHYSICAL_DISK_QUEUE_LENGTH": {
+  "PROCESSOR_PERCENT_USER_TIME": {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
-    "description": "Current disk queue length of all physical disks",
-    "displayName": "Disk Queue Length",
-    "displayNameShort": "Dsk Que Len",
-    "unit": "number"
+    "description": "Percentage of CPU spent in use space",
+    "displayName": "Processor % User Time",
+    "displayNameShort": "Proc % User Time",
+    "unit": "percentage"
   }
 }
 
