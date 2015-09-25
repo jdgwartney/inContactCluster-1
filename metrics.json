@@ -1,0 +1,11 @@
+{
+  "PHYSICAL_DISK_QUEUE_LENGTH": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "Current disk queue length of all physical disks",
+    "displayName": "Disk Queue Length",
+    "displayNameShort": "Dsk Que Len",
+    "unit": "number"
+  }
+}
+

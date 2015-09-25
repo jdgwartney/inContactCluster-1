@@ -1,0 +1,38 @@
+{
+    "name": "Windows Perforamance Counter Collector Example",
+    "version": "1.0.0",
+    "tags": "meter",
+    "description": "Example plugin that can be extended to collect specific performance counters",
+    "icon": "icon.png",
+    "command": "powershell -NoLogo -NonInteractive -Command Set-ExecutionPolicy RemoteSigned; .\\Core_Collector.ps1",
+    "metrics": [
+      "PULSE_",
+      "INCONTACT_BUSINESS_UNIT_THROTTLED",
+      "INCONTACT_CPU",
+	"INCONTACT_BUSINESS_UNIT_THROTTLED",
+	"INCONTACT_PROCESSING_THREADS",
+	"INCONTACT_PROCESSING_THREADS_BLOCKING",
+	"INCONTACT_PROCESSING_THREADS_BUSY",
+	"INCONTACT_SQL_EXECUTE_TIME_AVERAGE",
+	"INCONTACT_TOTAL_CALLS",
+	"INCONTACT_TOTAL_SCRIPTS",
+	"INCONTACT_TOTAL_SESSIONS",
+	"INCONTACT_TOTAL_VOICE_PROVIDERS"  
+    ],
+    "dashboards": [
+      {
+        "name": "Windows Performance Counters",
+        "layout": "d-w=1&d-h=2&d-pad=15&d-bg=none&d-g-Actions_Per_Second=0-0-1-1&d-g-Business_Unit_Throttled"
+      }
+    ],
+	"paramSchema" : [
+	 { 
+	   "title": "Poll Seconds", 
+	   "name": "pollSeconds", 
+	   "description": "How often should the plugin poll /proc/stat", 
+	   "type" : "string", 
+	   "default" : 1, 
+	   "required" : true 
+	 } 
+	]
+}
