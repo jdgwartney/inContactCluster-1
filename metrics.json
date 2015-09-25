@@ -6,6 +6,21 @@
     "displayName": "Processor % Time",
     "displayNameShort": "Proc % Time",
     "unit": "percent"
+  },
+  "MEMORY_COMMITTED_BYTES_IN_USE": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "Memory committed bytes in use",
+    "displayName": "Memory Committed Bytes",
+    "displayNameShort": "Mem Comm. Bytes",
+    "unit": "bytes"
+  },
+  "PHYSICAL_DISK_PERCENT_DISK_TIME": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "Physical Disk Percent Disk Time",
+    "displayName": "Physical Disk % Time",
+    "displayNameShort": "Disk % Time",
+    "unit": "percent"
   }
 }
-
