@@ -11,7 +11,7 @@
   "dashboards": [
     {
       "name": "Windows Performance Counters",
-      "layout": "d-w=1&d-h=2&d-pad=15&d-bg=none&d-g-Actions_Per_Second=0-0-1-1&d-g-Business_Unit_Throttled"
+      "layout": "d-w=3&d-h=2&d-pad=5&d-light=1&d-bg=none&d-g-PROCESSOR_PERCENT_PROCESSOR_TIME=0-0-3-2"
     }
   ],
   "paramSchema": [
