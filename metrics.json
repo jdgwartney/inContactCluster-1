@@ -13,7 +13,7 @@
     "description": "Memory committed bytes in use",
     "displayName": "Memory Committed Bytes",
     "displayNameShort": "Mem Comm. Bytes",
-    "unit": "bytes"
+    "unit": "bytecount"
   },
   "PHYSICAL_DISK_PERCENT_DISK_TIME": {
     "defaultAggregate": "AVG",
