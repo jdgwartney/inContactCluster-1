@@ -1,12 +1,17 @@
 {
-  "name": "Windows Perforamance Counter Collector Example",
+
+  "name" : "Windows Performance Counter",
   "version": "1.0.0",
-  "tags": "meter",
+  "meterVersionRequired" : "4.2.0-611",
+  "unsupportedPlatforms" : [ ],
+  "tags": "Windows",
   "description": "Example plugin that can be extended to collect specific performance counters",
   "icon": "icon.png",
   "command": "powershell -NoLogo -NonInteractive -Command Set-ExecutionPolicy RemoteSigned; .\\get-counters.ps1",
   "metrics": [
-    "PROCESSOR_PERCENT_PROCESSOR_TIME"
+    "PROCESSOR_PERCENT_PROCESSOR_TIME",
+    "MEMORY_COMMITTED_BYTES_IN_USE",
+    "PHYSICAL_DISK_PERCENT_DISK_TIME"
   ],
   "dashboards": [
     {
