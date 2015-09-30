@@ -15,6 +15,7 @@ $source = $param.source
 if ($source.Length -eq 0) {
     $source = $hostname
 }
+$delay = $param.delay
 
 # Generate an array of the counters to collect from the configurati on
 # Initialize an array
@@ -52,4 +53,5 @@ while($true)
         $metric_id = $metric_ids[$s.path]
         Write-Host $metric_id $value $source $timestamp
     }
+    Start-Sleep -m $delay
 }

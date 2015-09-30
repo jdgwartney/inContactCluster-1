@@ -1,4 +1,5 @@
 {
+   "delay": 5000
    "source": "MySource",
-   "PollInterval": "1"
+   "pollInterval": "1000"
 }
