@@ -1,37 +1,55 @@
 # Define constants for program, PS way of doing this to make the real constants??
 $CONFIG_FILE_NAME="counters.json"
-
+$PARAM_FILE_NAME="param.json"
+    
 # Check if configuration file exists and readable exit with error
 
 # Read configuration file which is encoded in JSON into PSObject
 # How to handle if the JSON is not properly formed. What is returned, null?
 $config = (Get-Content $CONFIG_FILE_NAME) -join "`n" | ConvertFrom-JSON
+$param = (Get-Content $PARAM_FILE_NAME) -join "`n" | ConvertFrom-JSON
 
-# Generate an array of the counters to collect from the configuration
-# Initialize an array
-$counters = @()
-$multipliers = @()
-$metrics = @()
-foreach ($counter in $config.counters) {
-# add each of the counters into the array
-  $counter.name
-  $counter.multiplier
-  $counter.metric
-  
+$hostname = Get-Content Env:\COMPUTERNAME
+
+# Get the source from the parameter file if missing or empty use
+# the name of the source
+$source = $param.source
+if ($source.Length -eq 0) {
+    $source = $hostname
 }
-$metric_id = 'PROCESSOR_PERCENT_PROCESSOR_TIME'
-$source = Get-Content Env:\COMPUTERNAME
-$counter_name1 = '\processor(_total)\% processor time'
-$counter_name2 = '\memory\% committed bytes in use'
-$counter_name3 = '\physicaldisk(_total)\% disk time'
 
+# Generate an array of the counters to collect from the configurati on
+# Initialize an array
+$counter_names = @()
+$multipliers = @{}
+$metric_ids = @{}
+
+<#
+1) Generate an array of the counter names we need to collect
+2) Generate a map of the multiplier to counter name
+3) Generate a map of the metric id to counter name
+#>
+$lhost = $hostname.ToLower()
+foreach ($counter in $config.counters) {
+  # add each of the counters into the array
+  $counter_names += $counter.counter_name
+
+  # Generate a key to lookup metric id and multiplier
+  $counter_name = $counter.counter_name.ToString()
+  $key = "\\$lhost$counter_name"
+  $multipliers[$key] = $counter.multiplier
+  $metric_ids[$key] = $counter.metric_id
+}
+
+# Continuously loop collectin metrics from the Windows Performance Counters
 while($true)
 {
-    foreach ($counter in $config.counters) {
-        $counter_value =  ((Get-Counter -Counter $counter_name).countersamples | select -expandproperty cookedvalue)/100.0
-        $current_time = Get-Date -Date (Get-Date).toUniversalTime() -UFormat %s
-        $timestamp = [math]::round($current_time)
+    $counters = Get-Counter -Counter $counter_names
+    $timestamp = [math]::Round((Get-Date -Date (Get-Date).toUniversalTime() -UFormat %s))
+    $samples = $counters.CounterSamples
+    foreach ($s in $samples) {
+        $value = $s.CookedValue * $multipliers[$s.path]
+        $metric_id = $metric_ids[$s.path]
+        Write-Host $metric_id $value $source $timestamp
     }
-    write-host $metric_id $counter_value $source $timestamp
-    [Console]::Out.Flush()
 }
