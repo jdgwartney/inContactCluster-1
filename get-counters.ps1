@@ -2,8 +2,6 @@
 $CONFIG_FILE_NAME="counters.json"
 $PARAM_FILE_NAME="param.json"
     
-# Check if configuration file exists and readable exit with error
-
 # Read configuration file which is encoded in JSON into PSObject
 # How to handle if the JSON is not properly formed. What is returned, null?
 $config = (Get-Content $CONFIG_FILE_NAME) -join "`n" | ConvertFrom-JSON
@@ -31,17 +29,19 @@ $metric_ids = @{}
 #>
 $lhost = $hostname.ToLower()
 foreach ($counter in $config.counters) {
-  # add each of the counters into the array
+  # add each of the counters into an array
   $counter_names += $counter.counter_name
 
   # Generate a key to lookup metric id and multiplier
   $counter_name = $counter.counter_name.ToString()
   $key = "\\$lhost$counter_name"
+
+  # Add values to the lookup maps
   $multipliers[$key] = $counter.multiplier
   $metric_ids[$key] = $counter.metric_id
 }
 
-# Continuously loop collectin metrics from the Windows Performance Counters
+# Continuously loop collecting metrics from the Windows Performance Counters
 while($true)
 {
     $counters = Get-Counter -Counter $counter_names
