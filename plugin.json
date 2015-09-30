@@ -16,7 +16,7 @@
   "dashboards": [
     {
       "name": "Windows Performance Counters",
-      "layout": "d-w=3&d-h=2&d-pad=5&d-light=1&d-bg=none&d-g-PROCESSOR_PERCENT_PROCESSOR_TIME=0-0-3-2"
+      "layout": "d-w=1&d-h=3&d-pad=5&d-light=1&d-bg=none&d-g-PROCESSOR_PERCENT_PROCESSOR_TIME=0-0-1-1&d-g-MEMORY_COMMITTED_BYTES_IN_USE=0-1-1-1&d-g-PHYSICAL_DISK_PERCENT_DISK_TIME=0-2-1-1"
     }
   ],
   "paramSchema": [
