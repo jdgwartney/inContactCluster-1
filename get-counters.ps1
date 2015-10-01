@@ -28,14 +28,14 @@ $metric_ids = @{}
 2) Generate a map of the multiplier to counter name
 3) Generate a map of the metric id to counter name
 #>
-$lhost = $hostname.ToLower()
+$lhost = $hostname.ToUpper()
 foreach ($counter in $config.counters) {
   # add each of the counters into an array
   $counter_names += $counter.counter_name
 
   # Generate a key to lookup metric id and multiplier
   $counter_name = $counter.counter_name.ToString()
-  $key = "\\$lhost$counter_name"
+  $key = "\\$lhost$counter_name".ToUpper()
 
   # Add values to the lookup maps
   $multipliers[$key] = $counter.multiplier
@@ -50,7 +50,7 @@ while($true)
     $samples = $counters.CounterSamples
     foreach ($s in $samples) {
         $value = $s.CookedValue * $multipliers[$s.path]
-        $metric_id = $metric_ids[$s.path]
+        $metric_id = $metric_ids[($s.path).toUpper()]
         Write-Host $metric_id $value $source $timestamp
     }
     Start-Sleep -m $delay
