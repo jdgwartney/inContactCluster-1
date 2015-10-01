@@ -14,26 +14,6 @@
            "counter_name": "\\physicaldisk(_total)\\% disk time",
            "multiplier": "0.01",
            "metric_id": "PHYSICAL_DISK_PERCENT_DISK_TIME"
-       },
-       {
-           "counter_name": "\\UCN Virtual Cluster\\Actions Per Second",
-           "multiplier": "1.0",
-           "metric_id": "UCN_ACTIONS_PER_SECOND"
-       },
-       {
-           "counter_name": "\\UCN Virtual Cluster\\Business Units Throttled",
-           "multiplier": "1.0",
-           "metric_id": "UCN_BUSINESS_UNITS_THROTTLED"
-       },
-       {
-           "counter_name": "\\UCN Virtual Cluster\\Processing Threads",
-           "multiplier": "1.0",
-           "metric_id": "UCN_PROCESSING_THREADS"
-       },
-       {
-           "counter_name": "\\UCN Virtual Cluster\\Processing Threads Blocking",
-           "multiplier": "1.0",
-           "metric_id": "UCN_PROCESSING_THREADS_BLOCKING"
        }
    ]
 }
