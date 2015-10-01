@@ -11,12 +11,16 @@
   "metrics": [
     "PROCESSOR_PERCENT_PROCESSOR_TIME",
     "MEMORY_COMMITTED_BYTES_IN_USE",
-    "PHYSICAL_DISK_PERCENT_DISK_TIME"
+    "PHYSICAL_DISK_PERCENT_DISK_TIME",
+    "UCN_ACTIONS_PER_SECOND",
+    "UCN_BUSINESS_UNITS_THROTTLED",
+    "UCN_PROCESSING_THREADS",
+    "UCN_PROCESSING_THREADS_BLOCKING"
   ],
   "dashboards": [
     {
-      "name": "Windows Performance Counters",
-      "layout": "d-w=1&d-h=3&d-pad=5&d-light=1&d-bg=none&d-g-PROCESSOR_PERCENT_PROCESSOR_TIME=0-0-1-1&d-g-MEMORY_COMMITTED_BYTES_IN_USE=0-1-1-1&d-g-PHYSICAL_DISK_PERCENT_DISK_TIME=0-2-1-1"
+      "name": "InContact Performance Counters",
+      "layout": "d-w=2&d-h=2&d-pad=5&d-light=1&d-bg=none&d-g-UCN_ACTIONS_PER_SECOND=0-0-1-1&d-g-UCN_BUSINESS_UNITS_THROTTLED=1-0-1-1&d-g-UCN_PROCESSING_THREADS=0-1-1-1&d-g-UCN_PROCESSING_THREADS_BLOCKING=1-1-1-1"
     }
   ],
   "paramSchema": [

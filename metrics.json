@@ -22,5 +22,37 @@
     "displayName": "Physical Disk % Time",
     "displayNameShort": "Disk % Time",
     "unit": "percent"
+  },
+  "UCN_ACTIONS_PER_SECOND": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "",
+    "displayName": "UNC Actions Per Second",
+    "displayNameShort": "UNC Act. Per. Sec.",
+    "unit": "number"
+  },
+  "UCN_BUSINESS_UNITS_THROTTLED": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "",
+    "displayName": "UNC Business Units Throttled",
+    "displayNameShort": "UNC Bus. Unts. Thr.",
+    "unit": "number"
+  },
+  "UCN_PROCESSING_THREADS": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "",
+    "displayName": "UNC Processing Threads",
+    "displayNameShort": "UNC Proc. Thr.",
+    "unit": "number"
+  },
+ "UCN_PROCESSING_THREADS_BLOCKING": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "",
+    "displayName": "UNC Processing Threads Blocking",
+    "displayNameShort": "UNC Proc. Thr. Blk.",
+    "unit": "number"
   }
 }
