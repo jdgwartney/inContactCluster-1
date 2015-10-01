@@ -1,11 +1,11 @@
 {
 
-  "name" : "Windows Performance Counter",
+  "name" : "InContact Performance Counter",
   "version": "1.0.0",
   "meterVersionRequired" : "4.2.0-611",
   "unsupportedPlatforms" : [ ],
   "tags": "Windows",
-  "description": "Example plugin that can be extended to collect specific performance counters",
+  "description": "Extracts InContact metrics from Windows Performance Counters",
   "icon": "icon.png",
   "command": "powershell -NoLogo -NonInteractive -Command Set-ExecutionPolicy RemoteSigned; .\\get-counters.ps1",
   "metrics": [
