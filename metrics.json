@@ -7,36 +7,28 @@
     "displayNameShort": "Proc % Time",
     "unit": "percent"
   },
-  "MEMORY_COMMITTED_BYTES_IN_USE": {
+  "INCONTACT_PROCESSING_THREADS_BLOCKING": {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
-    "description": "Memory committed bytes in use",
-    "displayName": "Memory Committed Bytes",
-    "displayNameShort": "Mem Comm. Bytes",
-    "unit": "bytecount"
-  },
-  "PHYSICAL_DISK_PERCENT_DISK_TIME": {
-    "defaultAggregate": "AVG",
-    "defaultResolutionMS": 1000,
-    "description": "Physical Disk Percent Disk Time",
-    "displayName": "Physical Disk % Time",
-    "displayNameShort": "Disk % Time",
-    "unit": "percent"
+    "description": "Processing Threads Blocking",
+    "displayName": "Processing Threads Blocking",
+    "displayNameShort": "Proc Threads Blocking",
+    "unit": "number"
   },
   "UCN_ACTIONS_PER_SECOND": {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
-    "description": "",
-    "displayName": "UNC Actions Per Second",
-    "displayNameShort": "UNC Act. Per. Sec.",
+    "description": "Actions Per Second",
+    "displayName": "Actions Per Second",
+    "displayNameShort": "Actions Per Second",
     "unit": "number"
   },
   "UCN_BUSINESS_UNITS_THROTTLED": {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
     "description": "",
-    "displayName": "UNC Business Units Throttled",
-    "displayNameShort": "UNC Bus. Unts. Thr.",
+    "displayName": "Business Units Throttled",
+    "displayNameShort": "Business Units Throttled",
     "unit": "number"
   },
   "UCN_PROCESSING_THREADS": {
@@ -47,12 +39,52 @@
     "displayNameShort": "UNC Proc. Thr.",
     "unit": "number"
   },
- "UCN_PROCESSING_THREADS_BLOCKING": {
+ "INCONTACT_PROCESSING_THREADS_BUSY": {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
-    "description": "",
-    "displayName": "UNC Processing Threads Blocking",
-    "displayNameShort": "UNC Proc. Thr. Blk.",
+    "description": "Processing Threads Busy",
+    "displayName": "Processing Threads Busy",
+    "displayNameShort": "Processing Threads Busy",
+    "unit": "number"
+  },
+ "INCONTACT_SQL_EXECUTE_TIME_AVERAGE": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "SQL Execute Time",
+    "displayName": "SQL Execute Time",
+    "displayNameShort": "SQL Execute Time",
+    "unit": "number"
+  },
+ "INCONTACT_TOTAL_CALLS": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "Incontact Total Calls",
+    "displayName": "Incontact Total Calls",
+    "displayNameShort": "Incontact Total Calls",
+    "unit": "number"
+  },
+ "INCONTACT_TOTAL_SCRIPTS": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "Incontact Total Scripts",
+    "displayName": "Incontact Total Scripts",
+    "displayNameShort": "Incontact Total Scripts",
+    "unit": "number"
+  },
+ "INCONTACT_TOTAL_SESSIONS": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "Incontact Total Sessions",
+    "displayName": "Incontact Total Sessions",
+    "displayNameShort": "Incontact Total Sessions",
+    "unit": "number"
+  },
+ "INCONTACT_TOTAL_VOICE_PROVIDERS": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "Total Voice Providers",
+    "displayName": "Total Voice Providers",
+    "displayNameShort": "Total Voice Providers",
     "unit": "number"
   }
 }
