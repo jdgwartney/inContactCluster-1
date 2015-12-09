@@ -3,57 +3,57 @@
        {
            "counter_name": "\\processor(_total)\\% processor time",
            "multiplier": "0.01",
-           "metric_id": "PROCESSOR_PERCENT_PROCESSOR_TIME"
+           "metric_id": "B3_PROCESSOR_PERCENT_PROCESSOR_TIME"
        },
        {
            "counter_name": "\\UCN Virtual Cluster\\Processing Threads Blocking",
            "multiplier": "0.01",
-           "metric_id": "INCONTACT_PROCESSING_THREADS_BLOCKING"
+           "metric_id": "B3_PROCESSING_THREADS_BLOCKING"
        },
        {
            "counter_name": "\\UCN Virtual Cluster\\Actions Per Second",
            "multiplier": "1.0",
-           "metric_id": "UCN_ACTIONS_PER_SECOND"
+           "metric_id": "B3_ACTIONS_PER_SECOND"
        },
        {
            "counter_name": "\\UCN Virtual Cluster\\Business Units Throttled",
            "multiplier": "1.0",
-           "metric_id": "UCN_BUSINESS_UNITS_THROTTLED"
+           "metric_id": "B3_BUSINESS_UNITS_THROTTLED"
        },
        {
            "counter_name": "\\UCN Virtual Cluster\\Processing Threads",
            "multiplier": "1.0",
-           "metric_id": "UCN_PROCESSING_THREADS"
+           "metric_id": "B3_PROCESSING_THREADS"
        },
        {
            "counter_name": "\\UCN Virtual Cluster\\Processing Threads Busy",
            "multiplier": "1.0",
-           "metric_id": "INCONTACT_PROCESSING_THREADS_BUSY"
+           "metric_id": "B3_PROCESSING_THREADS_BUSY"
        },
        {
            "counter_name": "\\ucn virtual cluster\\sql execute time average",
            "multiplier": "1.0",
-           "metric_id": "INCONTACT_SQL_EXECUTE_TIME_AVERAGE"
+           "metric_id": "B3_SQL_EXECUTE_TIME_AVERAGE"
        },
        {
            "counter_name": "\\ucn virtual cluster\\total Calls",
            "multiplier": "1.0",
-           "metric_id": "INCONTACT_TOTAL_CALLS"
+           "metric_id": "B3_TOTAL_CALLS"
        },
        {
            "counter_name": "\\ucn virtual cluster\\total Scripts",
            "multiplier": "1.0",
-           "metric_id": "INCONTACT_TOTAL_SCRIPTS"
+           "metric_id": "B3_TOTAL_SCRIPTS"
        },
        {
            "counter_name": "\\ucn virtual cluster\\total Sessions",
            "multiplier": "1.0",
-           "metric_id": "INCONTACT_TOTAL_SESSIONS"
+           "metric_id": "B3_TOTAL_SESSIONS"
        },
        {
            "counter_name": "\\ucn virtual cluster\\total voice providers",
            "multiplier": "1.0",
-           "metric_id": "INCONTACT_TOTAL_VOICE_PROVIDERS"
+           "metric_id": "B3_TOTAL_VOICE_PROVIDERS"
        }
 
    ]

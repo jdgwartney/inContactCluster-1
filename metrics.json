@@ -1,5 +1,5 @@
 {
-  "PROCESSOR_PERCENT_PROCESSOR_TIME": {
+  "B3_PROCESSOR_PERCENT_PROCESSOR_TIME": {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
     "description": "Percentage of CPU used",
@@ -7,84 +7,84 @@
     "displayNameShort": "Proc % Time",
     "unit": "percent"
   },
-  "INCONTACT_PROCESSING_THREADS_BLOCKING": {
+  "B3_PROCESSING_THREADS_BLOCKING": {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
     "description": "Processing Threads Blocking",
     "displayName": "Processing Threads Blocking",
-    "displayNameShort": "Proc Threads Blocking",
+    "displayNameShort": "B3_Proc Threads Blocking",
     "unit": "number"
   },
-  "UCN_ACTIONS_PER_SECOND": {
+  "B3_ACTIONS_PER_SECOND": {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
     "description": "Actions Per Second",
     "displayName": "Actions Per Second",
-    "displayNameShort": "Actions Per Second",
+    "displayNameShort": "B3_Actions Per Second",
     "unit": "number"
   },
-  "UCN_BUSINESS_UNITS_THROTTLED": {
+  "B3_BUSINESS_UNITS_THROTTLED": {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
     "description": "",
     "displayName": "Business Units Throttled",
-    "displayNameShort": "Business Units Throttled",
+    "displayNameShort": "B3_Business Units Throttled",
     "unit": "number"
   },
-  "UCN_PROCESSING_THREADS": {
+  "B3_PROCESSING_THREADS": {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
     "description": "",
     "displayName": "UNC Processing Threads",
-    "displayNameShort": "UNC Proc. Thr.",
+    "displayNameShort": "B3_UNC Proc. Thr.",
     "unit": "number"
   },
- "INCONTACT_PROCESSING_THREADS_BUSY": {
+ "B3_PROCESSING_THREADS_BUSY": {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
     "description": "Processing Threads Busy",
     "displayName": "Processing Threads Busy",
-    "displayNameShort": "Processing Threads Busy",
+    "displayNameShort": "B3_Processing Threads Busy",
     "unit": "number"
   },
- "INCONTACT_SQL_EXECUTE_TIME_AVERAGE": {
+ "B3_SQL_EXECUTE_TIME_AVERAGE": {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
     "description": "SQL Execute Time",
     "displayName": "SQL Execute Time",
-    "displayNameShort": "SQL Execute Time",
+    "displayNameShort": "B3_SQL Execute Time",
     "unit": "number"
   },
- "INCONTACT_TOTAL_CALLS": {
+ "B3_TOTAL_CALLS": {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
     "description": "Incontact Total Calls",
     "displayName": "Incontact Total Calls",
-    "displayNameShort": "Incontact Total Calls",
+    "displayNameShort": "B3_Incontact Total Calls",
     "unit": "number"
   },
- "INCONTACT_TOTAL_SCRIPTS": {
+ "B3_TOTAL_SCRIPTS": {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
     "description": "Incontact Total Scripts",
     "displayName": "Incontact Total Scripts",
-    "displayNameShort": "Incontact Total Scripts",
+    "displayNameShort": "B3_Incontact Total Scripts",
     "unit": "number"
   },
- "INCONTACT_TOTAL_SESSIONS": {
+ "B3_TOTAL_SESSIONS": {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
     "description": "Incontact Total Sessions",
     "displayName": "Incontact Total Sessions",
-    "displayNameShort": "Incontact Total Sessions",
+    "displayNameShort": "B3_Incontact Total Sessions",
     "unit": "number"
   },
- "INCONTACT_TOTAL_VOICE_PROVIDERS": {
+ "B3_TOTAL_VOICE_PROVIDERS": {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
     "description": "Total Voice Providers",
     "displayName": "Total Voice Providers",
-    "displayNameShort": "Total Voice Providers",
+    "displayNameShort": "B3_Total Voice Providers",
     "unit": "number"
   }
 }
