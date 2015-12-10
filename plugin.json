@@ -1,7 +1,7 @@
 {
 
   "name" : "B3 Cluster",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "meterVersionRequired" : "4.2.0-611",
   "unsupportedPlatforms" : [ ],
   "tags": "Windows",
