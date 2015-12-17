@@ -1,0 +1,90 @@
+{
+  "B2_PROCESSOR_PERCENT_PROCESSOR_TIME": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "Percentage of CPU used",
+    "displayName": "Processor % Time",
+    "displayNameShort": "B2 Proc % Time",
+    "unit": "percent"
+  },
+  "B2_PROCESSING_THREADS_BLOCKING": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "Processing Threads Blocking",
+    "displayName": "Processing Threads Blocking",
+    "displayNameShort": "B2 Processing Threads Blocking",
+    "unit": "number"
+  },
+  "B2_ACTIONS_PER_SECOND": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "Actions Per Second",
+    "displayName": "Actions Per Second",
+    "displayNameShort": "B2 Actions Per Second",
+    "unit": "number"
+  },
+  "B2_BUSINESS_UNITS_THROTTLED": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "",
+    "displayName": "Business Units Throttled",
+    "displayNameShort": "B2 Business Units Throttled",
+    "unit": "number"
+  },
+  "B2_PROCESSING_THREADS": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "",
+    "displayName": "UNC Processing Threads",
+    "displayNameShort": "B2 Processing Threads",
+    "unit": "number"
+  },
+ "B2_PROCESSING_THREADS_BUSY": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "Processing Threads Busy",
+    "displayName": "Processing Threads Busy",
+    "displayNameShort": "B2 Processing Threads Busy",
+    "unit": "number"
+  },
+ "B2_SQL_EXECUTE_TIME_AVERAGE": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "SQL Execute Time",
+    "displayName": "SQL Execute Time",
+    "displayNameShort": "B2 SQL Execute Time",
+    "unit": "number"
+  },
+ "B2_TOTAL_CALLS": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "Incontact Total Calls",
+    "displayName": "Incontact Total Calls",
+    "displayNameShort": "B2 Total Calls",
+    "unit": "number"
+  },
+ "B2_TOTAL_SCRIPTS": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "Incontact Total Scripts",
+    "displayName": "Incontact Total Scripts",
+    "displayNameShort": "B2 Total Scripts",
+    "unit": "number"
+  },
+ "B2_TOTAL_SESSIONS": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "Incontact Total Sessions",
+    "displayName": "Incontact Total Sessions",
+    "displayNameShort": "B2 Total Sessions",
+    "unit": "number"
+  },
+ "B2_TOTAL_VOICE_PROVIDERS": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "Total Voice Providers",
+    "displayName": "Total Voice Providers",
+    "displayNameShort": "B2 Total Voice Providers",
+    "unit": "number"
+  }
+}

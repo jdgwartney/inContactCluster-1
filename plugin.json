@@ -1,6 +1,6 @@
 {
 
-  "name" : "B3 Cluster",
+  "name" : "B2 Cluster",
   "version": "2.0.0",
   "meterVersionRequired" : "4.2.0-611",
   "unsupportedPlatforms" : [ ],
@@ -9,21 +9,21 @@
   "icon": "icon.png",
   "command": "powershell -NoLogo -NonInteractive -Command Set-ExecutionPolicy RemoteSigned; .\\get-counters.ps1",
   "metrics": [
-    "B3_PROCESSOR_PERCENT_PROCESSOR_TIME",
-    "B3_PROCESSING_THREADS_BLOCKING",
-    "B3_ACTIONS_PER_SECOND",
-    "B3_BUSINESS_UNITS_THROTTLED",
-    "B3_PROCESSING_THREADS",
-    "B3_PROCESSING_THREADS_BUSY",
-    "B3_SQL_EXECUTE_TIME_AVERAGE",
-    "B3_TOTAL_CALLS",
-    "B3_TOTAL_SCRIPTS",
-    "B3_TOTAL_SESSIONS",
-    "B3_TOTAL_VOICE_PROVIDERS"
+    "B2_PROCESSOR_PERCENT_PROCESSOR_TIME",
+    "B2_PROCESSING_THREADS_BLOCKING",
+    "B2_ACTIONS_PER_SECOND",
+    "B2_BUSINESS_UNITS_THROTTLED",
+    "B2_PROCESSING_THREADS",
+    "B2_PROCESSING_THREADS_BUSY",
+    "B2_SQL_EXECUTE_TIME_AVERAGE",
+    "B2_TOTAL_CALLS",
+    "B2_TOTAL_SCRIPTS",
+    "B2_TOTAL_SESSIONS",
+    "B2_TOTAL_VOICE_PROVIDERS"
   ],
   "dashboards": [
     {
-      "name": "InContact Performance Counters",
+      "name": "B2 Performance Counters",
       "layout": "d-w=2&d-h=2&d-pad=5&d-light=1&d-bg=none&d-g-UCN_ACTIONS_PER_SECOND=0-0-1-1&d-g-UCN_BUSINESS_UNITS_THROTTLED=1-0-1-1&d-g-UCN_PROCESSING_THREADS=0-1-1-1&d-g-UCN_PROCESSING_THREADS_BLOCKING=1-1-1-1"
     }
   ],
@@ -33,7 +33,7 @@
       "name": "delay",
       "description": "Amount of time in milliseconds to wait between collection of Windows performance counters",
       "type": "integer",
-      "default": 5000,
+      "default": 1000,
       "required": true
     },
     {
