@@ -1,6 +1,6 @@
 {
 
-  "name" : "B2 Cluster",
+  "name" : "Cluster",
   "version": "2.0.0",
   "meterVersionRequired" : "4.2.0-611",
   "unsupportedPlatforms" : [ ],
@@ -9,21 +9,21 @@
   "icon": "icon.png",
   "command": "powershell -NoLogo -NonInteractive -Command Set-ExecutionPolicy RemoteSigned; .\\get-counters.ps1",
   "metrics": [
-    "B2_PROCESSOR_PERCENT_PROCESSOR_TIME",
-    "B2_PROCESSING_THREADS_BLOCKING",
-    "B2_ACTIONS_PER_SECOND",
-    "B2_BUSINESS_UNITS_THROTTLED",
-    "B2_PROCESSING_THREADS",
-    "B2_PROCESSING_THREADS_BUSY",
-    "B2_SQL_EXECUTE_TIME_AVERAGE",
-    "B2_TOTAL_CALLS",
-    "B2_TOTAL_SCRIPTS",
-    "B2_TOTAL_SESSIONS",
-    "B2_TOTAL_VOICE_PROVIDERS"
+    "PROCESSOR_PERCENT_PROCESSOR_TIME",
+    "PROCESSING_THREADS_BLOCKING",
+    "ACTIONS_PER_SECOND",
+    "BUSINESS_UNITS_THROTTLED",
+    "PROCESSING_THREADS",
+    "PROCESSING_THREADS_BUSY",
+    "SQL_EXECUTE_TIME_AVERAGE",
+    "TOTAL_CALLS",
+    "TOTAL_SCRIPTS",
+    "TOTAL_SESSIONS",
+    "TOTAL_VOICE_PROVIDERS"
   ],
   "dashboards": [
     {
-      "name": "B2 Performance Counters",
+      "name": "Performance Counters",
       "layout": "d-w=2&d-h=2&d-pad=5&d-light=1&d-bg=none&d-g-UCN_ACTIONS_PER_SECOND=0-0-1-1&d-g-UCN_BUSINESS_UNITS_THROTTLED=1-0-1-1&d-g-UCN_PROCESSING_THREADS=0-1-1-1&d-g-UCN_PROCESSING_THREADS_BLOCKING=1-1-1-1"
     }
   ],
